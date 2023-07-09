@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.menu {
+    background-color: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .7s;
+    position: fixed;
+
+
+}
+.menu:hover {
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+    
+    
+}
+ul li a:hover, .active{
+   background-color: rgba(189, 189, 189, 0.548);
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+
+}
+.log-out a{
+    background-color: red;
+    transition: .7s;
+}
+.log-out :hover{
+    background-color: black;
+}
+ul li a i{
+    font-size: 30px;
+}
+ul li a p{
+    text-transform: capitalize;
+}
+.content{
+    
+    width: 100%;
+    margin-left: 100px;
+
+}
+.title-info{
+    background-color: rgb(43, 43, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 7px;
+    border-radius: 8px;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.data-info .box{
+    background-color: rgb(12, 25, 37);
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: .4s;
+}
+.data-info .box:hover{
+    background-color: rgb(104, 85, 85);
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data samp{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+
+}
+td, th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: rgb(12, 122, 231);
+    
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: orange;
+    
+}
